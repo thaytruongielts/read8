@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Tập IELTS Reading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #passage-container {
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        #passage-container h2 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .question-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .question-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .question-text {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+        button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .feedback-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d1e7dd;
+            border-radius: 5px;
+            border: 1px solid #a3cfbb;
+            display: none; /* Hide initially */
+        }
+        .correct-answer {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect-answer {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Luyện Tập IELTS Reading</h1>
+    
+    <div id="passage-container">
+        </div>
+
+    <button id="next-button">Bài Mới</button>
+    
+    <div id="question-1-section" class="question-section">
+        <h3 class="question-title">1. Câu nào trong bài có chứa thông tin cho câu hỏi True/False/Not Given sau?</h3>
+        <p id="question-1-text" class="question-text"></p>
+        <label for="user-answer-1">Dán câu trả lời của bạn vào đây:</label>
+        <textarea id="user-answer-1" placeholder="Ví dụ: 'The first sentence of the paragraph...'"></textarea>
+        <button id="submit-button-1" class="submit-button">Nộp</button>
+        <div id="feedback-1-section" class="feedback-section">
+            <h3>Đáp án chính xác:</h3>
+            <p id="correct-sentences-1"></p>
+        </div>
+    </div>
+
+    <div id="question-2-section" class="question-section">
+        <h3 class="question-title">2. Câu nào trong bài có chứa thông tin cho câu hỏi Multiple Choice sau?</h3>
+        <p id="question-2-text" class="question-text"></p>
+        <label for="user-answer-2">Dán câu trả lời của bạn vào đây:</label>
+        <textarea id="user-answer-2" placeholder="Ví dụ: 'The first sentence of the paragraph...'"></textarea>
+        <button id="submit-button-2" class="submit-button">Nộp</button>
+        <div id="feedback-2-section" class="feedback-section">
+            <h3>Đáp án chính xác:</h3>
+            <p id="correct-sentences-2"></p>
+        </div>
+    </div>
+    
+    <div id="question-3-section" class="question-section">
+        <h3 class="question-title">3. Câu nào trong bài có chứa thông tin cho câu hỏi Gap Filling sau?</h3>
+        <p id="question-3-text" class="question-text"></p>
+        <label for="user-answer-3">Dán câu trả lời của bạn vào đây:</label>
+        <textarea id="user-answer-3" placeholder="Ví dụ: 'The first sentence of the paragraph...'"></textarea>
+        <button id="submit-button-3" class="submit-button">Nộp</button>
+        <div id="feedback-3-section" class="feedback-section">
+            <h3>Đáp án chính xác:</h3>
+            <p id="correct-sentences-3"></p>
+        </div>
+    </div>
+    
+    <div id="question-4-section" class="question-section">
+        <h3 class="question-title">4. Đoạn nào trong bài có chứa thông tin cho câu hỏi Heading Matching sau?</h3>
+        <p id="question-4-text" class="question-text"></p>
+        <label for="user-answer-4">Dán câu trả lời của bạn vào đây:</label>
+        <textarea id="user-answer-4" placeholder="Ví dụ: 'The first sentence of the paragraph...'"></textarea>
+        <button id="submit-button-4" class="submit-button">Nộp</button>
+        <div id="feedback-4-section" class="feedback-section">
+            <h3>Đáp án chính xác:</h3>
+            <p id="correct-sentences-4"></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
